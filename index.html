@@ -130,6 +130,13 @@ header p {
 	}
 }
 
+@media (prefers-reduced-motion) {
+
+	.item:hover {
+		transform: none !important;
+	}
+}
+
 .item:hover a h2 {
 	text-decoration: underline;
 }
