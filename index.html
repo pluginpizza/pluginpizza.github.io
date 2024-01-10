@@ -330,5 +330,25 @@ footer p span:before {
 		<p>Made with <span title="love">love</span> in Berlin</p>
 	</footer>
 	</div>
+	<script>
+		document.addEventListener( 'DOMContentLoaded', function() {
+
+			const els = document.querySelectorAll('.item');
+
+			els.forEach( function( el ) {
+
+				const link = el.querySelector('.external');
+
+				if ( link ) {
+
+					el.style.cursor = 'pointer';
+
+					el.addEventListener( 'click', function() {
+						window.location = link;
+					});
+				}
+			});
+		});
+	</script>
 </body>
 </html>
