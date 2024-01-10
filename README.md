@@ -1,5 +1,5 @@
 # Plugin Pizza
 
-Bite-size free and open-source plugins for WordPress. Buon appetito!
+Bite-size plugins for WordPress.
 
 [https://plugin.pizza](https://plugin.pizza)
