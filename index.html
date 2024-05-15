@@ -97,10 +97,10 @@ header h1 span {
 header p {
 	font-size: 1.6rem;
 	font-weight: 500;
-	margin: 20px 0 0;
+	margin: 16px 0 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 600px) {
 
 	header p {
 		font-size: 2rem;
@@ -120,11 +120,17 @@ header p {
 	padding: 0 12px;
 }
 
+@media screen and (min-width: 600px) {
+
+	.items {
+		gap: 12px 12px;
+	}
+}
+
 @media screen and (min-width: 800px) {
 
 	.items {
-		gap: 28px 24px;
-		padding: 0;
+		gap: 24px 20px;
 	}
 }
 
@@ -137,6 +143,15 @@ header p {
 	margin: 0 0 20px 0;
 	transition: transform .2s ease-in;
 	flex: 0 0 100%;
+}
+
+@media screen and (min-width: 600px) {
+
+	.item {
+		flex: 1;
+		flex-basis: calc((100% - 32px) / 2);
+		margin: 0;
+	}
 }
 
 @media screen and (min-width: 800px) {
