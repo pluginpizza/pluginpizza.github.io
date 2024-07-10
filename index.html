@@ -5,12 +5,12 @@
 <title>Plugin Pizza - Bite-size plugins for WordPress</title>
 <meta name="description" content="Bite-size plugins for WordPress, free and open-source">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#c32929">
+<meta name="theme-color" content="#ac3131">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/images/icon.png" sizes="192x192">
 <link rel="apple-touch-icon" href="/assets/images/icon.png">
 <meta name="msapplication-TileImage" content="/assets/images/icon.png">
-<meta name="msapplication-TileColor" content="#c32929">
+<meta name="msapplication-TileColor" content="#ac3131">
 <style>
 html {
 	-webkit-box-sizing: border-box;
@@ -26,8 +26,8 @@ html {
 
 html,
 body {
-	background: #c32929;
-	color: #fff;
+	background-color: #000;
+	color: #000;
 	margin: 0;
 	outline: none;
 	padding: 0;
@@ -37,6 +37,10 @@ body {
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-size: 1.125em;
+}
+
+.wrap {
+	background-color: #ac3131;
 }
 
 a {
@@ -94,10 +98,13 @@ header h1 span {
 }
 
 header p {
+	color: #ffff55;
 	font-size: 1.5rem;
-	font-weight: 500;
+	font-weight: 700;
+	font-style: italic;
 	line-height: 1.325;
 	margin: 16px 0 0;
+	text-shadow: 1px 2px 0 #000;
 }
 
 @media screen and (min-width: 600px) {
@@ -115,7 +122,7 @@ header p {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	max-width: 920px;
+	max-width: 926px;
 	margin: 0 auto;
 	padding: 0 12px;
 }
@@ -123,24 +130,17 @@ header p {
 @media screen and (min-width: 600px) {
 
 	.items {
-		gap: 12px 12px;
-	}
-}
-
-@media screen and (min-width: 800px) {
-
-	.items {
-		gap: 24px 20px;
+		gap: 10px 10px;
 	}
 }
 
 .item {
 	background-color: #fff;
+	border: 6px solid #000;
 	border-radius: 20px;
-	color: #c32929;
-	padding: 25px 20px 60px 25px;
+	padding: 20px 20px 60px 20px;
 	position: relative;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 	transition: transform .2s ease-in;
 	flex: 0 0 100%;
 }
@@ -181,14 +181,19 @@ header p {
 .item h2 {
 	display: block;
 	font-size: 1.5em;
+	line-height: 1;
 	margin-top: 0;
 }
 
 @media screen and (min-width: 800px) {
 
 	.item h2 {
-		font-size: 1.5em;
+		font-size: 1.8em;
 	}
+}
+
+.nowrap {
+	white-space: nowrap;
 }
 
 .item p:last-of-type {
@@ -216,7 +221,7 @@ header p {
 
 .external {
 	bottom: 20px;
-	color: #018842;
+	color: #ac3131;
 	display: block;
 	font-size: 0.725em;
 	font-weight: 700;
@@ -246,15 +251,17 @@ header p {
 }
 
 footer {
+	background-color: #000;
+	color: #fff;
 	margin-top: 100px;
-	padding: 0 20px;
+	padding: 20px;
 	text-align: center;
 }
 
 footer p {
 	font-weight: 300;
 	line-height: 23px;
-	margin-top: 0;
+	margin: 0;
 }
 
 footer p span {
@@ -300,7 +307,7 @@ footer p span:before {
 				<article class="item">
 					<div class="heading">
 						<a href="https://wordpress.org/plugins/admin-bar-site-id/">
-							<h2>Admin Bar Site ID</h2>
+							<h2>Admin Bar <span class="nowrap">Site ID</span></h2>
 						</a>
 					</div>
 					<div class="description">
@@ -361,7 +368,7 @@ footer p span:before {
 						</a>
 					</div>
 					<div class="description">
-						<p>Simply type 'lorem' in the block editor and an autocompletion options modal is opened where you can select lorem ipsum text or a placeholder image.</p>
+						<p>Simply type 'lorem' in the block editor to add lorem ipsum text or a placeholder image to the post content.</p>
 					</div>
 					<a class="external" href="https://github.com/pluginpizza/loremipsum/">github.com/pluginpizza/loremipsum</a>
 				</article>
