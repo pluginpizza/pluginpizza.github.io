@@ -252,17 +252,26 @@ footer {
 	background-color: #000;
 	color: #fff;
 	margin-top: 100px;
-	padding: 20px;
-	text-align: center;
 }
 
-footer p {
+.footer-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin: 0 auto;
+	padding: 40px 20px;
+	text-align: center;
+	max-width: 926px;
+	width: 100%;
+}
+
+.footer-wrap p {
 	font-weight: 300;
 	line-height: 23px;
 	margin: 0;
 }
 
-footer p span {
+.footer-wrap p span {
 	font-size: 0;
 	color: transparent;
 	display: inline-block;
@@ -271,7 +280,7 @@ footer p span {
 	position: relative;
 }
 
-footer p span:before {
+.footer-wrap p span:before {
 	background-image: url(assets/images/carrot.svg);
 	content: '';
 	display: block;
@@ -280,6 +289,29 @@ footer p span:before {
 	position: absolute;
 	top: -0.4rem;
 	width: 20px;
+}
+
+.footer-love {
+	margin-bottom: 10px;
+}
+
+.footer-nav a {
+	border: 4px solid #ac3131;
+	border-radius: 40px;
+	color: #ac3131;
+	font-weight: 700;
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.footer-nav a:hover {
+	background-color: #ac3131;
+	color: #ffff55;
+	text-decoration: none;
+}
+
+.footer-nav a:active {
+	opacity: 0.9;
 }
 </style>
 </head>
@@ -373,7 +405,14 @@ footer p span:before {
 			</section>
 		</main>
 		<footer>
-			<p>Made with <span title="love">love</span> in Berlin</p>
+			<div class="footer-wrap">
+				<div class="footer-love">
+					<p>Made with <span title="love">love</span> in Berlin</p>
+				</div>
+				<div class="footer-nav">
+					<a href="https://github.com/pluginpizza">GitHub →</a>
+				</div>
+			</div>
 		</footer>
 	</div>
 	<script>
