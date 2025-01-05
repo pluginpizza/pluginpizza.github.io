@@ -445,21 +445,14 @@ footer {
 		</footer>
 	</div>
 	<script>
-	document.addEventListener( 'DOMContentLoaded', function() {
-
-		const els = document.querySelectorAll('.item');
-
-		els.forEach( function( el ) {
-
-			const link = el.querySelector('.external');
-
-			if ( link ) {
-
-				el.style.cursor = 'pointer';
-
-				el.addEventListener( 'click', function() {
-					window.location = link;
-				});
+	document.addEventListener('DOMContentLoaded', function() {
+		document.querySelector('.items').addEventListener('click', function(e) {
+			const item = e.target.closest('.item');
+			if (item) {
+				const link = item.querySelector('.external');
+				if (link) {
+					window.location = link.href;
+				}
 			}
 		});
 	});
