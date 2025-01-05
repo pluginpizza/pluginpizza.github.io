@@ -329,6 +329,17 @@ footer {
 .footer-nav a:active {
 	opacity: 0.9;
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
 </style>
 </head>
 <body>
@@ -338,6 +349,7 @@ footer {
 			<p>Bite-size plugins for WordPress<br>Buon appetito!</p>
 		</header>
 		<main class="items-wrap">
+			<h2 class="visually-hidden">Our WordPress Plugins</h2>
 			<section class="items">
 				<article class="item">
 					<div class="heading">
